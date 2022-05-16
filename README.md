@@ -20,13 +20,15 @@ there are 4 move that is left, right, up and down.
 let say we are on state
 [
 [0,0,0,2,0],
-[0,2,0,2,0],     
+[0,2,0,2,0],
 [0,0,4,0,0],
 [0,0,8,0,4],
 [0,0,0,0,0]
 ]
+
 (without randomly place 2)
 after left move -->
+
 [
 [2,0,0,0,0],
 [4,0,0,0,0],
@@ -36,6 +38,7 @@ after left move -->
 ]
 
 after right move -->
+
 [
 [0,0,0,0,2],
 [0,0,0,0,4],
@@ -45,6 +48,7 @@ after right move -->
 ]
 
 after up move -->
+
 [
 [0,2,4,4,4],
 [0,0,8,0,0],
@@ -78,14 +82,15 @@ example --
 
 here, position of max weight block is (4,2)
 then
-evaluating function = 256*(absolute(2-4)+absolute(4-2)) 
-					+ 512*(absolute(3-4)+absolute(2-2))
-					+ 2*(absolute(4-4)+absolute(1-2))
-					+ 4*(absolute(4-4)+absolute(3-2))
-					+ 4*(absolute(4-4)+absolute(4-2))
+evaluating function = 
+256*(absolute(2-4)+absolute(4-2)) + 
+512*(absolute(3-4)+absolute(2-2)) +
+2*(absolute(4-4)+absolute(1-2)) +
+4*(absolute(4-4)+absolute(3-2)) +
+4*(absolute(4-4)+absolute(4-2))
 					
-				= 256*4 + 512*1 +2*1 + 4*1 +4*2
-				=1550
+= 256*4 + 512*1 +2*1 + 4*1 +4*2
+=1550
 
 we have to evaluate the value of evaluating function of all next state 
 of the state we currently present at and suggest the best possible move 
