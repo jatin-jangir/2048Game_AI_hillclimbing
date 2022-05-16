@@ -1,7 +1,6 @@
 # 2048Game_AI_hillclimbing
 Artificial Intelligence help us to play 2048 game. I have used hill climbing using an evaluation function. 
 
-###### 2048 GAME using AI-hill climbing (evaluating function) ######
 the 2048 game is invented by gabriele cirulli.
 this game work around the concept of adding numbers to reach particular number that is 2048.
 initiallly, we have 5x5 baord 
@@ -58,6 +57,7 @@ after up move -->
 ]
 
 after down move -->
+
 [
 [0,0,0,0,0],
 [0,0,0,0,0],
@@ -72,6 +72,7 @@ we evaluate the state based on the product manhattan distance between
 the highest number and corresponding block to their weights.
 
 example --
+
 [
 [0,0,0,0,0],
 [0,0,0,0,0],
@@ -89,7 +90,7 @@ evaluating function =
 4*(absolute(4-4)+absolute(3-2)) +
 4*(absolute(4-4)+absolute(4-2))
 					
-= 256*4 + 512*1 +2*1 + 4*1 +4*2
+= 256 * 4 + 512 * 1  + 2 * 1 + 4 * 1 +4 * 2
 =1550
 
 we have to evaluate the value of evaluating function of all next state 
